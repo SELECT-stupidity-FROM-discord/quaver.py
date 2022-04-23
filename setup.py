@@ -1,10 +1,6 @@
 from setuptools import setup
 import re
 
-requirements = []
-with open('requirements.txt') as f:
-  requirements = f.read().splitlines()
-
 version = ''
 with open('quaver/__init__.py') as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
@@ -50,7 +46,7 @@ setup(name='quaver.py',
       long_description=readme,
       long_description_content_type="text/x-rst",
       include_package_data=True,
-      install_requires=requirements,
+      install_requires=['aiohttp'],
       python_requires='>=3.8.0',
       classifiers=[
         'Development Status :: 5 - Production/Stable',

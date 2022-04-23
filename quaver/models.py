@@ -1,6 +1,5 @@
 import asyncio
 import datetime
-from abc import ABC
 from typing import Iterable, Optional, Union
 
 import multidict
