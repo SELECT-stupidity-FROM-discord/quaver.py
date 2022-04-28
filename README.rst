@@ -133,7 +133,7 @@ Documentation (Return Types)
                     Optional[UserPlay]
                         # - User's recent plays.
 
-                await get_user_firstplaces(self, _id: Union[int, str], *, mode: Union[int, GameMode] = GameMode.FOUR_KEYS, paginate: bool = False, limit: int = 50) -> Optional[UserPlay]:
+            await get_user_firstplaces(self, _id: Union[int, str], *, mode: Union[int, GameMode] = GameMode.FOUR_KEYS, paginate: bool = False, limit: int = 50) -> Optional[UserPlay]:
 
                 # Parameters
                 # ----------
