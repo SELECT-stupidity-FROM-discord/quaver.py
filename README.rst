@@ -291,7 +291,7 @@ Documentation (Return Types)
             # - Type: dict -> quaver.PartialMap
             # - Only meant to be used internally.
 
-        async def get_cover():
+        await get_cover():
             # - Gets the cover of the map.
             # if the mapset_id of the map is None, then mapset_id will be fetched from the API.
             # - Type: str
